@@ -1,0 +1,53 @@
+
+
+
+<div class="paragraphs">
+  <div class="row">
+    <div class="span4">
+      <div class="clearfix content-heading">
+          <img class="gif2" src="https://cdn.dribbble.com/users/14374/screenshots/3147608/programer.gif"/>
+          <br>
+      </div>
+     <div>
+<h1>Welcome {{user.firstName}}</h1>
+<h4>Manage your Ideas here.......</h4>
+       {{#if stories}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Deadline</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each stories}}
+        <tr>
+          <td><a href="/stories/show/{{id}}">{{title}}</a></td>
+          <td>{{formatDate data 'MMMM Do YYYY'}}</td>
+          <td><span class="dash-status">{{status}}</span></td>
+          <td>{{formatDate enddate 'MMMM Do YYYY'}}</td>
+          <td>
+            <a class="btn left-align" href="/stories/edit/{{id}}"><i class="fa fa-pencil"></i> Edit</a>
+
+            <form action="/stories/{{id}}?_method=DELETE" method="post" id="delete-form">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn red"><i class="fa fa-remove"></i> Delete</button>
+            </form>
+             <a class="btn left-align blue" href="{{calenderLink title body date enddate}}" target="_blank"><i class="fa fa-calendar-check-o"></i> Add To Calender</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>You have not shared any Ideas yet</p>
+{{/if}}
+
+
+     </div>
+    </div>
+  </div>
+</div>

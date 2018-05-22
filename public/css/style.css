@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color :white;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper .fa-bars{
+  font-size:25px;
+}
+
+footer{
+  margin-top:20px;
+}
+
+.story-text{
+  height:100px;
+}
+.fixed-action-btn{
+	margin-bottom: 10px;
+}
+.dash-status{
+  text-transform: capitalize;
+}
+
+#delete-form{
+  display:inline;
+}
+
+.gif {
+  width: 600px;
+  display: inline;
+  margin-right: 20px;
+  float: right;
+}
+
+.gif2 {
+	margin-top: 20px;
+  width: 500px;
+  display: inline;
+	float: right;
+	padding-left: 100px;
+}
+
+loginimg {
+  display: block;
+}
+
+idea{
+  float: left;
+  display: inline;
+}
+
+
+.deadline{
+	color: orange;
+	font-size: 1.25em;
+
+}
+
+/* Basic styles */
+.wrapper h1 {
+	position: relative;
+	float: left;
+	color: orange;
+	font-family: 'Inconsolata', Consolas, monospace;
+	font-size: 4em;
+}
+.wrapper h1 span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: white;
+	width: 100%;
+	border-left: .1em solid transparent;
+	-webkit-animation: typing 3s steps(16) forwards,
+										 cursor 1s infinite;
+	animation: typing 3s steps(16) forwards,
+						 cursor 1s infinite;
+}
+/* Animation */
+@-webkit-keyframes typing{
+	from { width: 100%;}
+	to { width: 0;}
+}
+@-webkit-keyframes cursor{
+	50% { border-color: black;}
+}
+@keyframes typing{
+	from{ width: 100%;}
+	to{ width: 0;}
+}
+@keyframes cursor{
+	50% { border-color: black;}
+}
+
+.cardideas {
+	background-color:#b2ebf2 ;
+}
+
+.cardstory {
+	background-color: #fff9c4;
+}
+
+.cardcomments {
+	background-color:#c8e6c9;
+}
+
+.cardprofile {
+	background-color: #e8f5e9;
+}
+
+.btn {
+	margin: 5px;
+}
+
+.iconabout {
+	width: 200px;
+}
+
