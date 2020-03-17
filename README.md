@@ -1,7 +1,7 @@
 # IdeaGround
 A Web application for sharing and managing projects and their deadlines. This application is an easy way of organizing various projects, and the snappiest way to equalize your work. Users can utilize the app in Mobile, Tablet, Laptop, Desktop and they will be greeted with a nice responsive Material design.
 
-<Strong> Available Online : http://ideaground.herokuapp.com/ <Strong>
+<Strong> Available Online : https://ideaground.herokuapp.com/ <Strong>
 
 Tech Stack: 
 <Strong>Node.js, Express, MongoDB, HTML5, CSS3,Javascript, Handlebars,Bootstrap,Moment.js, Material Design </strong>
@@ -14,6 +14,7 @@ Tech Stack:
 <p align="center">
   <img src="./assets/2.png" />
 <img src="./assets/1.png" />
+<img src="./assets/5.png" />
 <img src="./assets/3.png" />
 <img src="./assets/4.png" />
 </p>
